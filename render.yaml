@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: youtube-telegram-bot
     env: python
     startCommand: bash start.sh
