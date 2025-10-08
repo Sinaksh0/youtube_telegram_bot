@@ -1,0 +1,13 @@
+cookies.txt
+.env
+
+__pycache__/
+*.log
+
+.DS_Store
+
+downloads/
+download_video.*
+
+*.tmp
+*.bak
