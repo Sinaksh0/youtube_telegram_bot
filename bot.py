@@ -69,7 +69,6 @@ async def handle_qulity(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def download_youtube(URL,format_code='best'):
     you_form = {
         'format': format_code,
-        #'ffmpeg_location': 'ffmpeg/ffmpeg.exe',
         'outtmpl': 'download_video.%(ext)s',
         'cookies': 'cookies.txt',
         'quiet': True
