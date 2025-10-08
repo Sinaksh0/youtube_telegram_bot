@@ -1,13 +1,21 @@
+ffmpeg.exe
+ffmpeg/
+*.exe
+
 cookies.txt
 .env
+*.key
+*.pem
 
 __pycache__/
+*.pyc
 *.log
-
-.DS_Store
+*.tmp
 
 downloads/
-download_video.*
+*.mp4
+*.webm
+*.mkv
 
-*.tmp
-*.bak
+.DS_Store
+Thumbs.db
