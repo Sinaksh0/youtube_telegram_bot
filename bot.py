@@ -71,6 +71,7 @@ def download_youtube(URL,format_code='best'):
         'format': format_code,
         'ffmpeg_location': r'C:\Users\shrqy\Downloads\ABDM\Compressed\ffmpeg-8.0-essentials_build\ffmpeg-8.0-essentials_build\bin\ffmpeg.exe',
         'outtmpl': 'download_video.%(ext)s',
+        'cookies': r'C:\Users\Downloads\Youtube_bot\cookies.txt',
         'quiet': True
         }
     with YoutubeDL(you_form) as ydl:
