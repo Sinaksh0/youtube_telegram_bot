@@ -71,6 +71,8 @@ def download_youtube(URL,format_code='best'):
         'format': format_code,
         'outtmpl': 'download_video.%(ext)s',
         'cookies': 'cookies.txt',
+        'merge_output_format': 'mp4',
+        'overwrites': True,
         'quiet': True
         }
     with YoutubeDL(you_form) as ydl:
