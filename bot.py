@@ -69,9 +69,9 @@ async def handle_qulity(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def download_youtube(URL,format_code='best'):
     you_form = {
         'format': format_code,
-        'ffmpeg_location': r'C:\Users\shrqy\Downloads\ABDM\Compressed\ffmpeg-8.0-essentials_build\ffmpeg-8.0-essentials_build\bin\ffmpeg.exe',
+        'ffmpeg_location': 'ffmpeg/ffmpeg.exe',
         'outtmpl': 'download_video.%(ext)s',
-        'cookies': r'C:\Users\Downloads\Youtube_bot\cookies.txt',
+        'cookies': 'cookies.txt',
         'quiet': True
         }
     with YoutubeDL(you_form) as ydl:
@@ -80,6 +80,7 @@ def download_youtube(URL,format_code='best'):
         return filename
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
+print("TOKEN:", repr(TOKEN))
 app = ApplicationBuilder().token(TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
