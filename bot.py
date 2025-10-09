@@ -70,7 +70,7 @@ def download_youtube(URL,format_code='best'):
     you_form = {
         'format': format_code,
         'outtmpl': 'download_video.%(ext)s',
-        'cookies': 'cookies.txt',
+        'cookiefile': 'cookies.txt',
         'merge_output_format': 'mp4',
         'overwrites': True,
         'quiet': True
